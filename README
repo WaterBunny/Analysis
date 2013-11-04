@@ -1,0 +1,10 @@
+Things you need:
+	log4cpp
+	doxygen
+	graphviz
+	build-essential
+	g++
+	eclipse-cdt (3.8)
+	libmysqlclient-dev
+	ConfigFile, http://ai.stanford.edu/~gal/Code/FindMotifs/
+
