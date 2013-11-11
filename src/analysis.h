@@ -25,6 +25,6 @@
 #ifndef ANALYSIS_H_
 #define ANALYSIS_H_
 
-using namespace log4cpp;
+//using namespace log4cpp;
 
 #endif /* ANALYSIS_H_ */

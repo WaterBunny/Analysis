@@ -7,6 +7,8 @@
 #include <ConfigFile.h>
 #include <string>
 
+
+
 #ifndef CONFIG_H_
 #define CONFIG_H_
 
@@ -15,7 +17,6 @@
  * 	Instances of this class read the config file and hold conifg parameters.
  * 	Conifg parameter can be read via getter Functions.
  */
-//class Config;
 
 class Config {
 private:
@@ -45,22 +46,5 @@ public:
 	}
 };
 
-Config::Config() {
-	// reading config data into class
-	readConfig();
-}
-
-void Config::readConfig() {
-
-	// open the config file
-	ConfigFile config(CONFIG_FILE,"=","#");
-
-	// reading config parameter
-	// database
-	config.readInto(dbName, "dbName");
-	config.readInto(dbPasswd, "dbPasswd");
-	config.readInto(dbHost, "dbHost");
-	config.readInto(dbPort, "dbPort");
-}
 
 #endif /* CONFIG_H_ */

@@ -6,6 +6,7 @@
 
 #include <analysis.h>
 
+
 int main() {
 	std::string logConfFile = "../conf/log4cpp.conf"; //path to log4cpp config file
 	std::string iniConfFile = "../conf/analysis.ini"; //path to application config
@@ -18,11 +19,12 @@ int main() {
 	log4cpp::Category& logger = log4cpp::Category::getRoot();
 
 	// Creating Config instance
-	Config config = new Config();
+	class Config conf;
 
 
 
-	logger << log4cpp::Priority::DEBUG << "Reading paramerter dbName: " << config.getDbName;
+
+	logger << log4cpp::Priority::DEBUG << "Reading paramerter dbName: " << conf.getDbName();
 
 	logger.info("Hi Ho :-)");
 
