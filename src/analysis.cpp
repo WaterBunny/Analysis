@@ -19,14 +19,11 @@ int main() {
 	log4cpp::Category& logger = log4cpp::Category::getRoot();
 
 	// Creating Config instance
-	class Config conf;
+	Config* conf = new Config();
 
+	//logger << log4cpp::Priority::DEBUG << "Reading paramerter dbName: " << conf->getDbName();
 
-
-
-	logger << log4cpp::Priority::DEBUG << "Reading paramerter dbName: " << conf.getDbName();
-
-	logger.info("Hi Ho :-)");
+	//logger.info("Hi Ho :-)");
 
 
 	log4cpp::Category::shutdown();

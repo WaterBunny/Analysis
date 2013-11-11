@@ -4,8 +4,9 @@
 *	Description : WaterBunny data analysis tool Config class in C++, Ansi-style
 */
 
-#include <ConfigFile.h>
-#include <config.h>
+//#include <ConfigFile.h>
+//#include <config.h>
+#include <analysis.h>
 
 Config::Config() {
 	// reading config data into class
